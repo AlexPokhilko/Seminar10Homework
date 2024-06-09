@@ -11,4 +11,8 @@ data.head()
 
 data.loc[data['whoAmI'] == 'human', 'amIhuman'] = 1
 data.loc[data['whoAmI'] == 'robot', 'amIhuman'] = 0
+
+data.loc[data['whoAmI'] == 'human', 'amIrobot'] = 0
+data.loc[data['whoAmI'] == 'robot', 'amIrobot'] = 1
+
 data
